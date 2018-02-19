@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1"  parallel="tests" > <!-- set thread count to more than 1 to run more instances -->
+  <listeners>
+    <listener class-name="com.comodo.test.base.listeners.BaseTestListener" />
+  </listeners>
+
+<!--   <test name="FirefoxTest"> -->
+<!--   <parameter name="browser" value="Firefox" /> -->
+<!--     <classes> -->
+<!-- 		<class name="com.comodo.test.c1.test.company.CompanyTests" /> -->
+<!--     </classes> -->
+<!--   </test> -->
+  
+  <test name="ChromeTest">
+  <parameter name="browser" value="Chrome" />
+    <classes>
+<!--         <class name="com.comodo.test.c1.test.login.LoginTests" /> -->
+<!-- 		<class name="com.comodo.test.c1.test.company.CompanyTests" /> -->
+		<class name="com.comodo.test.c1.test.staff.StaffTests" />
+    </classes>
+  </test>
+
+  
+<!--   <test name="IETest"> -->
+<!--   <parameter name="browser" value="IE" /> -->
+<!--     <classes> -->
+<!-- 		<class name="com.comodo.test.c1.test.company.CompanyTests" /> -->
+<!--     </classes> -->
+<!--   </test> -->
+ </suite>
